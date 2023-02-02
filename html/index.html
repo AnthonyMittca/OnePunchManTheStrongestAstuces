@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!DOCTYPE html>
+        <html lang="fr">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>One Punch Man The Strongest Tips</title>
+    </head>
+
+  <body>
+
+    <header>
+        <p class="headtext">SSR Ce mois : SSR + TTM, Comeback : SSR+Gyoro | SSR mois prochain : SSR + DK ?, Comeback: ssr + DSK</p>
+
+        <div class="menu">
+            <nav class="navigation">
+              <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle">
+                  <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                  </svg>
+                </label>
+              <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li class="dropdown"><a href="#">INFORMATIONS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">COMPÉTENCES ET ABILITIES DES UNITÉS</a></li>
+                        <li><a href="#">STATISTIQUES</a></li>
+                        <li><a href="#">TALENTS</a></li>
+                        <li><a href="#">OBJETS DE SAITAMA</a></li>
+                        <li><a href="#">AMÉLIORATIONS DES SOUVENIRS DE SAITAMA</a></li>
+                        <li><a href="#">AVANTAGES</a></li>
+                        <li><a href="#">ÉQUIPEMENTS</a></li>
+                        <li><a href="#">ÉQUIPEMENTS ROUGES</a></li>
+                        <li><a href="#">LIMITE DE CASSURE</a></li>
+                        <li><a href="#">ÉVEIL (ÉTOILES ROSES)</a></li>
+                        <li><a href="#">ÉQUIPEMENTS AMPLIFIANT</a></li>
+                        <li><a href="#">CENTRE D'ENTRAÎNEMENT</a></li>
+                        <li><a href="#">SYSTÈME D'EMBLÈME (ESSAIS DE MIRAGE)</a></li>
+                        <li><a href="#">LABORATOIRE DE TACTIQUE / TOUR DE CROISSANT</a></li>
+                        <li><a href="#">CARTE D'ASCENSION D'ÉTOILES</a></li>
+                        <li><a href="#">RÉALISATIONS CACHÉES</a></li>
+                        <li><a href="#">QUESTIONNAIRE / QUIZ</a></li>
+                        <li><a href="#">GLOSSAIRE</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">GUIDES</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">GUIDE DU DÉBUTANT</a></li>
+                        <li><a href="#">CE QUE VOUS DEVEZ FAIRE TOUS LES JOURS !</a></li>
+                        <li><a href="#">GUIDE DU MALL ET DES RESSOURCES</a></li>
+                        <li><a href="#">GUIDE DIAMANT</a></li>
+                        <li><a href="#">GUIDE DU BÂTON DE SAUVEGARDE DE HÉROS</a></li>
+                        <li><a href="#">DÉFI DE CLUB</a></li>
+                        <li><a href="#">CONCOURS DE CLUB</a></li>
+                        <li><a href="#">GUERRE DE CLUB</a></li>
+                        <li><a href="#">ESSAIS CORE</a></li>
+                        <li><a href="#">INSTITUT DE GÉNÉTIQUE</a></li>
+                        <li><a href="#">GUIDE DU CLASH EN DIRECT</a></li>
+                        <li><a href="#">CATASTROPHE MONDIALE</a></li>
+                        <li><a href="#">RÉSISTER À L'INVASION</a></li>
+                        <li><a href="#">APEX CLASH (DOJO MARTIAL)</a></li>
+                        <li><a href="#">BATAILLE D'HONNEUR</a></li>
+                        <li><a href="#">ZONE DE BATAILLE SANS FIN</a></li>
+                        <li><a href="#">ZONE INTERDITE</a></li>
+                        <li><a href="#">COMMENT JOUER SUR OPM : TS  SUR LE SERVEUR JAPONNAIS </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">SSRS LIMITÉS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">GUIDE DES BILLETS NOIRS/SHURIKEN</a></li>
+                        <li><a href="#">SSR+ GUIDE</a></li>
+                        <li><a href="#">LSSR QUE VOUS DEVRIEZ PULL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">ACADÉMIE</a></li>
+                <li><a href="#">LISTE DE TIERS</a></li>
+                <li><a href="#">PATCH NOTES</a></li>
+                <li><a href="#">HORAIRE DE LA MER</a></li>
+                <li><a href="#">HORAIRE CN LSSR</a></li>
+                <li><a href="#">NOUVELLES CN</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+
+    <img class="banner" src="/Assets/images/"/>
+
+    <div class="ln">
+        <h2>Latest news :</h2>
+        <div class="scrolling-container">
+            <ul>
+            <li><a href="#">Lien 1</a></li>
+            <li><a href="#">Lien 2</a></li>
+            <li><a href="#">Lien 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bgc">
+
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+          </section>
+        
+        <script>
+        const slidesContainer = document.getElementById("slides-container"); 
+        const slide = document.querySelector(".slide");
+        const prevButton = document.getElementById("slide-arrow-prev");
+        const nextButton = document.getElementById("slide-arrow-next");
+            
+        nextButton.addEventListener("click", () => { const slideWidth = slide.clientWidth; slidesContainer.scrollLeft += slideWidth;});
+            
+        prevButton.addEventListener("click", () => { const slideWidth = slide.clientWidth; slidesContainer.scrollLeft -= slideWidth;});
+        </script>
+
+        <div class="container">
+                <input type="radio" id="section1Radio" name="section" checked>
+                <label for="section1Radio" class="l1">Section 1</label>
+                <input type="radio" id="section2Radio" name="section">
+                <label for="section2Radio" class="l2">Section 2</label>
+                <input type="radio" id="section3Radio" name="section" >
+                <label for="section3Radio" class="l3">Section 3</label>
+            <div id="sectionContainer">
+            <div class="section1">
+                <div class="art1">
+                    <img/><h3>Section1</h3><p>Section1</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section1</h3><p>Section1</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section1</h3><p>Section1</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section1</h3><p>Section1</p>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="art1">
+                    <img/><h3>Section2</h3><p>Section2</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section2</h3><p>Section2</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section2</h3><p>Section2</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section2</h3><p>Section2</p>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="art1">
+                    <img/><h3>Section3</h3><p>Section3</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section3</h3><p>Section3</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section3</h3><p>Section3</p>
+                </div>
+                <div class="art1">
+                    <img/><h3>Section3</h3><p>Section3</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="cntrp">
+        
+        <div class="article">
+            <div class="sectiona">
+                <img />
+                <h2>Categorie</h2>
+                <h4>Test</h4>
+                <p>date</p>
+                <p>test</p>
+            </div>
+            <div class="sectiona">
+                <img />
+                <h2>Categorie</h2>
+                <h4>Test</h4>
+                <p>date</p>
+                <p>test</p>
+            </div>
+            <div class="sectiona">
+                <img />
+                <h2>Categorie</h2>
+                <h4>Test</h4>
+                <p>date</p>
+                <p>test</p>
+            </div>
+            <div class="sectiona">
+                <img />
+                <h2>Categorie</h2>
+                <h4>Test</h4>
+                <p>date</p>
+                <p>test</p>
+            </div>
+            <div class="sectiona">
+                <img />
+                <h2>Categorie</h2>
+                <h4>Test</h4>
+                <p>date</p>
+                <p>test</p>
+            </div>
+        </div>
+
+        <div class="rej">
+            <p>Rejoins Nous :</p>
+        </div>
+
+    </div>
+        
+    <footer>
+      <!--Footer content here-->
+    </footer>
+
+  </body>
+</html>
