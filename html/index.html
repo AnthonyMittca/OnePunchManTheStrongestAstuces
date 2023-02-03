@@ -7,7 +7,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js" defer></script>
         <title>One Punch Man The Strongest Tips</title>
     </head>
 
@@ -107,31 +109,55 @@
 
     <div id="bgc">
 
-        <section class="slider-wrapper">
-            <button class="slide-arrow" id="slide-arrow-prev">
-              &#8249;
-            </button>
-            <button class="slide-arrow" id="slide-arrow-next">
-              &#8250;
-            </button>
-            <ul class="slides-container" id="slides-container">
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
-            </ul>
-          </section>
-        
-        <script>
-        const slidesContainer = document.getElementById("slides-container"); 
-        const slide = document.querySelector(".slide");
-        const prevButton = document.getElementById("slide-arrow-prev");
-        const nextButton = document.getElementById("slide-arrow-next");
-            
-        nextButton.addEventListener("click", () => { const slideWidth = slide.clientWidth; slidesContainer.scrollLeft += slideWidth;});
-            
-        prevButton.addEventListener("click", () => { const slideWidth = slide.clientWidth; slidesContainer.scrollLeft -= slideWidth;});
-        </script>
+        <div class="diapo" data-speed="3000" data-transition="700">
+            <div class="elements">
+                <div class="element">
+                    <img src="/Assets/images/banner1.jpg" alt="Banner1">
+                    <div class="caption">
+                        <h2>Clavier</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/Assets/images/banner2.jpg" alt="Banner2">
+                    <div class="caption">
+                        <h2>Dame</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/Assets/images/banner3.jpg" alt="Banner3">
+                    <div class="caption">
+                        <h2>Paysage</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/Assets/images/banner4.jpg" alt="Banner4">
+                    <div class="caption">
+                        <h2>Paysage</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/Assets/images/banner5.jpg" alt="Banner5">
+                    <div class="caption">
+                        <h2>Paysage</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/Assets/images/banner6.jpg" alt="Banner6">
+                    <div class="caption">
+                        <h2>Paysage</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Flèches -->
+            <i id="nav-gauche" class="las la-chevron-left"></i>
+            <i  id="nav-droite" class="las la-chevron-right"></i>
+        </div>
 
         <div class="container">
                 <input type="radio" id="section1Radio" name="section" checked>
@@ -192,37 +218,37 @@
         <div class="article">
             <div class="sectiona">
                 <img />
-                <h2>Categorie</h2>
-                <h4>Test</h4>
-                <p>date</p>
+                <a href="#"><h2>Categorie</h2></a>
+                <a href="#"><h4>Test</h4></a>
+                <a href="#"><h5>date</h5></a>
                 <p>test</p>
             </div>
             <div class="sectiona">
                 <img />
-                <h2>Categorie</h2>
-                <h4>Test</h4>
-                <p>date</p>
+                <a href="#"><h2>Categorie</h2></a>
+                <a href="#"><h4>Test</h4></a>
+                <a href="#"><h5>date</h5></a>
                 <p>test</p>
             </div>
             <div class="sectiona">
                 <img />
-                <h2>Categorie</h2>
-                <h4>Test</h4>
-                <p>date</p>
+                <a href="#"><h2>Categorie</h2></a>
+                <a href="#"><h4>Test</h4></a>
+                <a href="#"><h5>date</h5></a>
                 <p>test</p>
             </div>
             <div class="sectiona">
                 <img />
-                <h2>Categorie</h2>
-                <h4>Test</h4>
-                <p>date</p>
+                <a href="#"><h2>Categorie</h2></a>
+                <a href="#"><h4>Test</h4></a>
+                <a href="#"><h5>date</h5></a>
                 <p>test</p>
             </div>
             <div class="sectiona">
                 <img />
-                <h2>Categorie</h2>
-                <h4>Test</h4>
-                <p>date</p>
+                <a href="#"><h2>Categorie</h2></a>
+                <a href="#"><h4>Test</h4></a>
+                <a href="#"><h5>date</h5></a>
                 <p>test</p>
             </div>
         </div>
@@ -233,8 +259,42 @@
 
     </div>
         
+    <div class="pages">
+        <a href="#" class="btn1">
+            <div class="bttn">
+                <p>1</p>
+            </div>
+        </a>
+        <a href="#" class="btn2">
+            <div class="bttn">
+                <p>2</p>
+            </div>
+        </a>
+        <a href="#" class="btn3">
+            <div class="bttn">
+                <p>...</p>
+            </div>
+        </a>
+        <a href="#" class="btn4">
+            <div class="bttn">
+                <p>25</p>
+            </div>
+        </a>
+        <a href="#" class="btn5">
+            <div class="bttn">
+                <p>></p>
+            </div>
+        </a>
+    </div>
     <footer>
-      <!--Footer content here-->
+    <div class="jsp">
+        <a href="#">About</a>|<a href="#">Contact</a>|<a href="#">Disclaimer</a>|<a href="#">Frenchsquid</a>
+    </div>
+    <div class="endtittle">
+        <h1>One Punch Man : The Strongest Astuces</h1>
+        <h4>Your One Punch Man The Strongest Guide and News for everything you need to know! en francais ! Ce site n'a aucun but lucratif et existe seulement afin d'aider la communauté francaise du jeu OPM:TS. Tout les article provienne d'ici :  , n'hesitez pas à aller faire un tour sur leur site.</h4>
+    </div>
+    <div class="troll"><p>Proudly powered by Anthony Mittica and not the W-word | Theme : a little bit of css </p></div>
     </footer>
 
   </body>
