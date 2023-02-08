@@ -477,10 +477,51 @@ label {
 /*////////////////////////////Footer////////////////////////////////////////*/
 footer {
   width: 100%;
-  width: auto;
+  height: auto;
   position: relative;
+  top: 60px;
   border: 1px solid red;
   background-color: darkblue;
+}
+
+.jsp {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+.jsp a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.endtittle {
+  position: relative;
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+.endtittle h1 {
+  width: auto;
+  height: auto;
+  border: 1px solid red;
+}
+.endtittle h4 {
+  width: auto;
+  height: auto;
+  border: 1px solid blue;
+}
+
+.troll {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
 }
 
 /*////////////////////////////Fin Footer////////////////////////////////////////*/
