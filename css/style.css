@@ -7,8 +7,6 @@
   width: 100%;
   height: 70%;
   background: #ED0000;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +34,14 @@ nav ul {
 }
 
 nav li {
+  position: relative;
+  left: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
   margin: 10px;
-  width: 100px;
+  width: 105px;
   height: 30px;
 }
 
@@ -51,6 +51,9 @@ nav a, li {
   font-family: arial;
   font-size: 14px;
   letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   transform: rotate(-0.03deg);
 }
@@ -122,13 +125,12 @@ nav.open {
 /*////////////////////////////Navigation-Bar////////////////////////////////////////*/
 /*////////////////////////////Fin header////////////////////////////////////////*/
 body {
-  background-color: bisque;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 header {
   width: 100%;
   height: 100px;
-  border: 1px solid yellow;
 }
 
 .headtext {
@@ -150,25 +152,56 @@ header {
   width: 100%;
   height: 300px;
   position: relative;
+  top: -14.5px;
   z-index: -1;
+  overflow: hidden;
+}
+.banner b {
+  position: relative;
+  top: -15px;
+  font-family: arial;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+.banner p {
+  position: relative;
+  left: 6%;
+  top: 12%;
+  width: 480px;
+  height: 200px;
+  text-align: justify;
+  font-family: arial;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  border: 1px solid red;
+}
+.banner img {
+  position: relative;
+  top: -100%;
+  width: 100%;
 }
 
 /*////////////////////////////Latest News////////////////////////////////////////*/
 .ln {
+  position: relative;
+  top: -12px;
   display: flex;
   align-items: center;
   width: 100%;
   height: 40px;
   z-index: -1;
-  border: 1px solid red;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .contour {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 1px solid blue;
+  background-color: red;
   width: 180px;
   height: 100%;
 }
@@ -178,8 +211,9 @@ header {
   align-items: center;
   width: 150px;
   height: 100%;
-  background-color: red;
-  border: 1px solid black;
+  font-family: arial;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 
 .scrolling-container {
@@ -214,7 +248,6 @@ header {
   justify-content: space-between;
   position: relative;
   top: 10px;
-  border: 1px solid pink;
 }
 
 /*////////////////////////////Principale Article Container////////////////////////////////////////*/
@@ -224,7 +257,7 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid black;
+  box-shadow: 0px 0px 10px 3px #939292;
 }
 
 .elements {
@@ -243,12 +276,30 @@ header {
 
 .caption {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  text-align: start;
   padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.caption h2 {
+  font-family: arial;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.caption p {
+  font-family: arial;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.caption p svg {
+  margin-right: 5px;
 }
 
 #nav-gauche, #nav-droite {
@@ -265,13 +316,13 @@ header {
 }
 
 /*////////////////////////////Fin slider////////////////////////////////////////*/
-/*////////////////////////////Fin Principale Article Container////////////////////////////////////////*/
 /*////////////////////////////Right Container about latest, popular or fire article////////////////////////////////////////*/
 .container {
   display: block;
   width: 30%;
   height: 100%;
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 input[type=radio] {
@@ -281,9 +332,10 @@ input[type=radio] {
 label {
   position: relative;
   top: 10px;
+  left: 10%;
   cursor: pointer;
-  margin: 15px;
-  border: 1px solid gold;
+  margin: 10px;
+  padding-right: 10px;
 }
 
 #sectionContainer {
@@ -291,12 +343,10 @@ label {
   height: auto;
   position: relative;
   top: 25px;
-  border: 1px solid red;
 }
 
 .section1 {
   display: none;
-  border: 1px solid black;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -305,7 +355,6 @@ label {
 
 .section2 {
   display: none;
-  border: 1px solid black;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -313,7 +362,6 @@ label {
 }
 
 .section3 {
-  border: 1px solid black;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -334,15 +382,15 @@ label {
 }
 
 #section1Radio:checked ~ .l1 {
-  border-bottom: 3px solid red;
+  text-decoration: underline red;
 }
 
 #section2Radio:checked ~ .l2 {
-  border-bottom: 3px solid red;
+  text-decoration: underline red;
 }
 
 #section3Radio:checked ~ .l3 {
-  border-bottom: 3px solid red;
+  text-decoration: underline red;
 }
 
 #sectionContainer > div {
@@ -353,14 +401,16 @@ label {
   display: flex;
   width: 100%;
   height: 100px;
+  background-color: white;
   margin-bottom: 10px;
-  border: 1px solid black;
+  box-shadow: 0px 0px 10px 1px #939292;
 }
 .art1 img {
   width: 100px;
   height: 100px;
   position: relative;
   left: 5px;
+  background-color: black;
 }
 .art1 h3 {
   position: relative;
@@ -371,7 +421,7 @@ label {
   align-items: center;
   width: 70px;
   height: 20px;
-  font-style: "arial";
+  font-style: arial;
   font-size: 13px;
   color: white;
   background-color: red;
@@ -385,8 +435,32 @@ label {
   align-items: center;
   width: 400px;
   height: 50px;
-  font-style: "arial";
+  font-style: arial;
   border: 1px solid black;
+}
+
+.l1 {
+  border-right: 2px solid black;
+}
+.l1 svg {
+  position: relative;
+  top: 6px;
+  margin-right: 5px;
+}
+
+.l2 {
+  border-right: 2px solid black;
+}
+.l2 svg {
+  position: relative;
+  top: 6px;
+  margin-right: 5px;
+}
+
+.l3 svg {
+  position: relative;
+  top: 6px;
+  margin-right: 5px;
 }
 
 /*////////////////////////////Fin Right Container about latest, popular or fire article////////////////////////////////////////*/
@@ -490,7 +564,61 @@ label {
   right: 0;
   width: 30%;
   height: 400px;
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.rej .bandeau {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.rej .bandeau p {
+  background-color: red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-style: arial;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  width: 28%;
+  height: 100%;
+  padding-left: 5px;
+  border-bottom-right-radius: 15px;
+}
+.rej .link {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  height: auto;
+  font-style: arial;
+  font-size: 18px;
+}
+.rej .link a {
+  color: rgb(255, 165, 0);
+  text-decoration: none;
+  font-style: arial;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.rej .link a:hover {
+  text-decoration: underline rgba(0, 0, 0, 0.4);
+  color: rgba(255, 165, 0, 0.5);
+}
+.rej .link p {
+  color: rgba(0, 0, 0, 0.8);
+  font-style: arial;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .perso {
@@ -531,6 +659,7 @@ label {
   border: 1px solid black;
 }
 
+/*////////////////////////////Fin Principale Article Container////////////////////////////////////////*/
 /*//////////////////////////// pages(bouton)////////////////////////////////////////*/
 .pages {
   width: 20%;
